@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>母婴</title>
+    <link href="logo.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="./resource/style.css">
+    <style>
+        #wrapper {
+            top: 110px;
+        }
+        #scroller ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: left;
+            display: -webkit-box;
+            -webkit-box-orient:vertical;
+        }
+
+        #scroller li {
+            display: -webkit-box;
+            -webkit-box-flex:1;
+            -webkit-box-orient:horizontal;
+            border-bottom: 1px solid #dcdcdc;
+            border-top: 1px solid #efefef;
+            font-size: 14px;
+            padding:2%;;
+        }
+        #scroller li a{
+            display: -webkit-box;
+            -webkit-box-flex:1;
+            line-height: 39px;;
+        }
+        #scroller li a:nth-child(2){
+           word-break: break-all;
+            color:#272727;
+            text-align: center;
+            font-size: 18px;;
+        }
+        #scroller li a:nth-child(2) span{
+            font-size: 12px;;
+        }
+        #scroller li a:nth-child(3){
+            width: 100px;
+            display: inline-block;
+            color: #efefef;
+
+        }
+        #scroller li:first-child a:first-child{
+            background:url("resource/images/img/home_01.png") no-repeat;width:100px
+        }
+        #scroller li:nth-child(2) a:first-child{
+            background:url("resource/images/img/home_02.png") no-repeat;width:100px
+        }
+        #scroller li:nth-child(3) a:first-child{
+            background:url("resource/images/img/home_03.png") no-repeat;width:100px
+        }
+        #scroller li:nth-child(4) a:first-child{
+            background:url("resource/images/img/home_04.png") no-repeat;width:100px
+        }
+        #scroller li:nth-child(5) a:first-child{
+            background:url("resource/images/img/home_05.png") no-repeat;width:100px
+        }
+    </style>
+    <script type="text/javascript" src="./resource/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded() {
+            myScroll = new iScroll('wrapper');
+        }
+        document.addEventListener('touchdown', function (e) {
+            e.preventDefault();
+        }, false);
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(loaded, 200);
+        }, false);</script>
+</head>
+<body>
+<div id="header">
+    <a href="javascript:;"></a>
+    <a href="javascript:;">首页</a>
+    <a href="javascript:;"></a>
+</div>
+<form action="">
+    <div id="search">
+        <input type="text"/>
+    </div>
+</form>
+<div id="wrapper">
+    <div id="scroller">
+        <ul id="thelist">
+            <li>
+                <a href="#"></a>
+                <a href="#"><br>
+                    奶粉<br>
+                    <span>品牌奶,妈妈奶粉..</span><br>
+                </a>
+                <a href="javascript:;">产品秒杀中</a>
+            </li>
+            <li>
+                <a href="#"></a>
+                <a href="javascript:;"><br>
+                    奶粉<br>
+                    <span>品牌奶,妈妈奶粉..</span><br>
+                </a>
+                <a href="javascript:;">
+                    奶粉<br>
+                    <span>品牌奶,妈妈奶粉..</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"></a>
+                <a href="javascript:;"><br>
+                    奶粉<br>
+                    <span>品牌奶,妈妈奶粉..</span><br>
+                </a>
+                <a href="javascript:;"><br>
+                    奶粉<br>
+                    <span>品牌奶,妈妈奶粉..</span><br>
+                </a>
+            </li>
+            <li>
+                <a href="#"></a>
+                <a href="javascript:;"><br>
+                    奶粉<br>
+                    <span>品牌奶,妈妈奶粉..</span><br>
+                </a>
+                <a href="javascript:;"><br>
+                    奶粉<br>
+                    <span>品牌奶,妈妈奶粉..</span><br>
+                </a>
+            </li>
+            <li>
+                <a href="#"></a>
+                <a href="javascript:;"><br>
+                    奶粉<br>
+                    <span>品牌奶,妈妈奶粉..</span><br>
+                </a>
+                <a href="javascript:;">
+                    奶粉<br>
+                    <span>品牌奶,妈妈奶粉..</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+    <a href="index.html" class="ave"></a>
+    <a href="resource/html/Product.html"></a>
+    <a href="resource/html/Individual.html"></a>
+    <a href="resource/html/buyus.html"></a>
+    <a href="resource/html/mores.html"></a>
+</div>
+</body>
+</html>
