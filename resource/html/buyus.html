@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>母婴</title>
+    <link href="../../logo.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        #scroller ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: left;
+        }
+
+        #scroller li {
+            padding: 0 10px;
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px solid #dcdcdc;
+            border-top: 1px solid #efefef;
+            font-size: 14px;
+        }
+
+        #scroller li.a {
+            border-bottom: 1px solid #efefef;
+            border-top: 1px solid #efefef;
+        }
+
+        #scroller li a {
+            background-image: url(../images/icon/icon-6.png);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            display: block;
+            padding-left: 40px;
+            color: #a5a3a3;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        #scroller li:nth-child(2) a {
+            background-image: url(../images/icon/icon-1.png);
+        }
+
+        #scroller li:nth-child(3) a {
+            background-image: url(../images/icon/icon-7.png);
+        }
+
+        #scroller li:nth-child(4) a {
+            background-image: url(../images/icon/icon-8.png);
+        }
+    </style>
+    <script type="text/javascript" src="../iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded() {
+            myScroll = new iScroll('wrapper');
+        }
+        document.addEventListener('touchdown', function (e) {
+            e.preventDefault();
+        }, false);
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(loaded, 200);
+        }, false);</script>
+</head>
+<body>
+<div id="header">
+    <a href="javascript:;"></a>
+    <a href="javascript:;">我的购物车</a>
+    <a href="javascript:;"></a>
+</div>
+<div id="wrapper">
+    <div id="scroller">
+        <ul id="thelist">
+            <li><a href="buyus/buyus_1.html">购物车</a></li>
+            <li><a href="buyus/buyus_2.html">推荐</a></li>
+            <li><a href="buyus/buyus_3.html">订单</a></li>
+            <li><a href="buyus/buyus_4.html">收藏</a></li>
+            <li class="a"></li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+    <a href="../../index.html" title="首页"></a>
+    <a href="Product.html" title="产品大全"></a>
+    <a href="Individual.html" title="个人中心"></a>
+    <a href="buyus.html" title="我的购物车" class="ave"></a>
+    <a href="mores.html" title="设置"></a>
+</div>
+</body>
+</html>

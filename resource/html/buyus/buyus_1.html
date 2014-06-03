@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>母婴</title>
+    <link href="logo.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <style>
+        #buy-1-main{
+            width: 100%;
+            -webkit-box-pack: center;
+            -webkit-box-align: center;
+        }
+        .buy-1-main img{
+            width: 100%;height: 100%;display: block;
+            margin:2% 0%;
+        }
+    </style>
+    <script type="text/javascript" src="../../iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded() {
+            myScroll = new iScroll('wrapper');
+        }
+        document.addEventListener('touchdown', function (e) {
+            e.preventDefault();
+        }, false);
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(loaded, 200);
+        }, false);</script>
+</head>
+<body>
+<div id="header">
+    <a href="../buyus.html" class="leftBtn"></a>
+    <a href="javascript:;">我的购物车</a>
+    <a href="javascript:;"></a>
+</div>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="buy-1-main" id="buy-1-main">
+            <img src="../../images/img/buybus.png">
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <a href="../../index.html" title="首页"></a>
+    <a href="../Product.html" title="产品大全"></a>
+    <a href="../Individual.html" title="个人中心" class="ave"></a>
+    <a href="../buyus.html" title="我的购物车"></a>
+    <a href="../mores.html" title="设置"></a>
+</div>
+</body>
+</html>
